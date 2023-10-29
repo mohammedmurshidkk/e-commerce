@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <AppLayout />
-        {children}
+        <div className="main">{children}</div>
       </body>
     </html>
   );
