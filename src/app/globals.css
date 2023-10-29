@@ -7,7 +7,6 @@
 html,
 body {
   height: 100%;
-  width: 100vw;
 }
 
 .aspect-ratio-box {
@@ -25,4 +24,22 @@ body {
   width: 90%;
   height: 90%;
   object-fit: contain;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

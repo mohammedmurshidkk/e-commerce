@@ -21,3 +21,25 @@ export async function fetchProductDetail(id) {
     });
   return response;
 }
+
+export async function fetchProductCategories() {
+  const response = await fetch(`${API_URL}/products/categories/`)
+    .then((res) => {
+      return res.json();
+    })
+    .catch((e) => {
+      console.log(e);
+    });
+  return response;
+}
+
+export async function fetchProductByCategory(cat) {
+  const response = await fetch(`${API_URL}/products/category/${cat}`)
+    .then((res) => {
+      return res.json();
+    })
+    .catch((e) => {
+      console.log(e);
+    });
+  return response;
+}

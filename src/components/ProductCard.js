@@ -6,7 +6,7 @@ function ProductCard(props) {
 
   return (
     <div key={product.id} className="col mb-4">
-      <Link style={{ textDecoration: "none" }} href={`products/${product.id}`}>
+      <Link style={{ textDecoration: "none" }} href={`/products/${product.id}`}>
         <div className="card h-100 shadow">
           <div className="aspect-ratio-box">
             <img
