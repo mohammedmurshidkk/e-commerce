@@ -33,11 +33,11 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        <AppLayout />
         <CartProvider>
+          <AppLayout />
           <div className="main">{children}</div>
+          <Footer />
         </CartProvider>
-        <Footer />
       </body>
     </html>
   );
